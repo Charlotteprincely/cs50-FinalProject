@@ -1,0 +1,28 @@
+{
+    "remotePath": "./public_html/My_Flutter_projects/signal_app",
+    "host": "ftp.alikazemi.click",
+    "username": "signalapp@alikazemi.click",
+    "password": "a?nfpM~So]85",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "uploadOnSave": true,
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
