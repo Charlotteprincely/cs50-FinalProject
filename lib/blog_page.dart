@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signal_app/custom_widgets/post_wiget.dart';
 
 class BlogScreen extends StatelessWidget {
   const BlogScreen({super.key});
@@ -22,126 +23,14 @@ class BlogScreen extends StatelessWidget {
               padding: EdgeInsets.all(15),
               child: Column(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image(
-                      image: AssetImage('images/a.png'),
-                    ),
-                  ),
+                  postWidget('images/a.png', 'سیگنال خرید 15 آبان', '14,500',
+                      '15,100'),
                   SizedBox(height: 10),
-                  Text('Alchemy Pay سیگنال خرید: برای 20 آبان'),
+                  postWidget('images/c.png', 'سیگنال خرید 15 آبان', '14,500',
+                      '15,100'),
                   SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'فروش: 14,250',
-                        style: TextStyle(color: Colors.red),
-                      ),
-                      SizedBox(width: 3),
-                      Icon(
-                        Icons.monetization_on,
-                        color: Colors.red,
-                      ),
-                      SizedBox(width: 10),
-                      Text(
-                        'خرید: 13,500',
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      SizedBox(width: 3),
-                      Icon(
-                        Icons.monetization_on,
-                        color: Colors.green,
-                      ),
-                    ],
-                  ),
-                  Container(
-                    width: 150,
-                    child: Divider(
-                      thickness: 2,
-                      color: Colors.black,
-                    ),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image(
-                      image: AssetImage('images/c.png'),
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Text('Alchemy Pay سیگنال خرید: برای 20 آبان'),
-                  SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'فروش: 14,250',
-                        style: TextStyle(color: Colors.red),
-                      ),
-                      SizedBox(width: 3),
-                      Icon(
-                        Icons.monetization_on,
-                        color: Colors.red,
-                      ),
-                      SizedBox(width: 10),
-                      Text(
-                        'خرید: 13,500',
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      SizedBox(width: 3),
-                      Icon(
-                        Icons.monetization_on,
-                        color: Colors.green,
-                      ),
-                    ],
-                  ),
-                  Container(
-                    width: 150,
-                    child: Divider(
-                      thickness: 2,
-                      color: Colors.black,
-                    ),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image(
-                      image: AssetImage('images/r.png'),
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Text('Alchemy Pay سیگنال خرید: برای 20 آبان'),
-                  SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'فروش: 14,250',
-                        style: TextStyle(color: Colors.red),
-                      ),
-                      SizedBox(width: 3),
-                      Icon(
-                        Icons.monetization_on,
-                        color: Colors.red,
-                      ),
-                      SizedBox(width: 10),
-                      Text(
-                        'خرید: 13,500',
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      SizedBox(width: 3),
-                      Icon(
-                        Icons.monetization_on,
-                        color: Colors.green,
-                      ),
-                    ],
-                  ),
-                  Container(
-                    width: 150,
-                    child: Divider(
-                      thickness: 2,
-                      color: Colors.black,
-                    ),
-                  ),
+                  postWidget('images/r.png', 'سیگنال خرید 15 آبان', '14,500',
+                      '15,100'),
                   SizedBox(height: 20),
                   TextButton(
                     style: TextButton.styleFrom(foregroundColor: Colors.red),
