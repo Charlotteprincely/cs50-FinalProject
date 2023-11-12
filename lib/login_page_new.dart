@@ -3,40 +3,37 @@ import 'package:signal_app/blog_page.dart';
 import 'package:signal_app/general_functions.dart';
 import 'package:signal_app/password_recovery.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class LoginPageNew extends StatelessWidget {
+  const LoginPageNew({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
       body: SafeArea(
-        child: SingleChildScrollView(
+        child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'خوش آمدید',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    'VIP ورود کاربران ',
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(width: 10),
-                  Icon(Icons.login),
+                  Icon(Icons.login, size: 40),
                 ],
               ),
+              SizedBox(height: 10),
               Image(
-                image: AssetImage('images/welcome.png'),
+                image: AssetImage('images/w.png'),
               ),
+              SizedBox(height: 10),
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
-                  side: BorderSide(
-                    color: Colors.white,
-                    width: 2.0,
-                  ),
-                  foregroundColor: Colors.white,
+                  foregroundColor: Colors.black,
+                  side: BorderSide(color: Colors.black, width: 2),
                   minimumSize: Size(200, 40),
                 ),
                 onPressed: () {
@@ -44,23 +41,25 @@ class LoginPage extends StatelessWidget {
                 },
                 child: Text('ورود به حساب'),
               ),
+              SizedBox(height: 10),
               ElevatedButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black,
                   minimumSize: Size(200, 40),
                   elevation: 5,
                 ),
                 onPressed: () {},
                 child: Text('ثبت نام'),
               ),
+              SizedBox(height: 10),
               TextButton(
+                style: TextButton.styleFrom(foregroundColor: Colors.black),
                 onPressed: () {
                   navigateToPage(context, PasswordRecovery());
                 },
                 child: Text(
                   'فراموشی رمز عبور',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                 ),
               ),
             ],

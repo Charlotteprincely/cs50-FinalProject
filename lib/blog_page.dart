@@ -23,14 +23,23 @@ class BlogScreen extends StatelessWidget {
               padding: EdgeInsets.all(15),
               child: Column(
                 children: [
-                  postWidget('images/a.png', 'سیگنال خرید 15 آبان', '14,500',
-                      '15,100'),
+                  postWidget(
+                      imageUrl: 'images/a.png',
+                      title: 'سیگنال خرید 15 آبان',
+                      buyPrice: '14,500',
+                      sellPrice: '15,100'),
                   SizedBox(height: 10),
-                  postWidget('images/c.png', 'سیگنال خرید 15 آبان', '14,500',
-                      '15,100'),
+                  postWidget(
+                      imageUrl: 'images/a.png',
+                      title: 'سیگنال خرید 15 آبان',
+                      buyPrice: '14,500',
+                      sellPrice: '15,100'),
                   SizedBox(height: 10),
-                  postWidget('images/r.png', 'سیگنال خرید 15 آبان', '14,500',
-                      '15,100'),
+                  postWidget(
+                      imageUrl: 'images/a.png',
+                      title: 'سیگنال خرید 15 آبان',
+                      buyPrice: '14,500',
+                      sellPrice: '15,100'),
                   SizedBox(height: 20),
                   TextButton(
                     style: TextButton.styleFrom(foregroundColor: Colors.red),

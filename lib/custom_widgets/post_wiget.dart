@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-Widget postWidget(
-  String imageUrl,
-  String title,
-  String buyPrice,
-  String sellPrice,
-) {
+Widget postWidget({
+  required String imageUrl,
+  required String title,
+  required String buyPrice,
+  required String sellPrice,
+}) {
   return Column(
     children: [
       ClipRRect(
