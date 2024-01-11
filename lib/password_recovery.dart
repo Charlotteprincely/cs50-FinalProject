@@ -6,9 +6,28 @@ class PasswordRecovery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('بازیابی رمز عبور'),
+        centerTitle: true,
+      ),
       body: SafeArea(
         child: Center(
-          child: Text('بازیابی رمز عبور'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('ایمیل خود را وارد کنید'),
+              SizedBox(
+                height: 30,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('ارسال'),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white),
+              ),
+            ],
+          ),
         ),
       ),
     );
